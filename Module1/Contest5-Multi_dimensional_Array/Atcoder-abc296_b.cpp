@@ -4,20 +4,19 @@ using namespace std;
 int main()
 {
     string s[8];
-    for (int i = 8; i <= 1; i--)
+
+    for (int j = 0; j < 8; j++)
     {
-        for (int j = 1; j <= 8; j++)
-        {
-            cin >> s[j];
-        }
+        cin >> s[j];
     }
-    for (int i = 8; i <= 1; i--)
+
+    for (int i = 0; i < 8; i++)
     {
         for (int j = 0; j < 8; j++)
         {
-            if (s[i][j] = '*')
+            if (s[i][j] == '*')
             {
-                cout << (char)j+63 << i << endl;
+                cout << (char)(j + 'a') << 8-i << endl;
                 break;
             }
         }
